@@ -27,6 +27,100 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*--------------------------------------------------------------
+# Products
+--------------------------------------------------------------*/
+.products .nav-tabs {
+  border: 0;
+}
+.products .nav-link {
+  border: 0;
+  padding: 20px;
+  color: #555555;
+  border-radius: 0;
+  border-left: 5px solid #fff;
+  cursor: pointer;
+}
+.products .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.products .nav-link p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.products .nav-link:hover h4 {
+  color: #3498db;
+}
+.products .nav-link.active {
+  background: #f7fcfc;
+  border-color: #3498db;
+}
+.products .nav-link.active h4 {
+  color: #3498db;
+}
+.products .tab-pane.active {
+  -webkit-animation: slide-down 0.5s ease-out;
+  animation: slide-down 0.5s ease-out;
+}
+.products .tab-pane img {
+  float: left;
+  max-width: 300px;
+  padding: 0 15px 15px 0;
+}
+@media (max-width: 768px) {
+  .products .tab-pane img {
+    float: none;
+    padding: 0 0 15px 0;
+    max-width: 100%;
+  }
+}
+.products .tab-pane h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+.products .tab-pane p {
+  color: #777777;
+}
+.products .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -1185,6 +1279,9 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Team
